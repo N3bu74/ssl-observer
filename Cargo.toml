@@ -1,0 +1,3 @@
+[workspace]
+members = ["xtask", "ssl-observer", "ssl-observer-common"]
+resolver = "2"

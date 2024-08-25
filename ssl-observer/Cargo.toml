@@ -1,0 +1,29 @@
+[package]
+name = "ssl-observer"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+aya = "0.12"
+aya-log = "0.2"
+clap = { version = "4.1", features = ["derive"] }
+ssl-observer-common = { path = "../ssl-observer-common", features = ["user"] }
+anyhow = "1"
+env_logger = "0.11.3"
+libc = "0.2"
+log = "0.4"
+tokio = { version = "1.25", features = ["macros", "rt", "rt-multi-thread", "net", "signal"] }
+sqlx = { version = "0.8.0", features = ["mysql", "sqlite","runtime-tokio"] }
+chrono = "0.4.38"
+egui="0.27.2"
+eframe="0.27.2"
+bytes = "1.6.0"
+async-compression = {version = "0.4.10",features = ["tokio","gzip"]}
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.8.19"
+lazy_static = "1.5.0"
+
+[[bin]]
+name = "ssl-observer"
+path = "src/main.rs"

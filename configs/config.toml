@@ -1,0 +1,14 @@
+[database]
+db_type = "mysql"
+
+[database.sqlite]
+path = "./"
+file = "ssl_data.db"
+name = "ssl_data"
+
+[database.mysql]
+user = "root"
+password = "root"
+host = "localhost"
+port = "3306"
+name = "ssl_data"
