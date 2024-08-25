@@ -86,9 +86,9 @@ mysql ：存储 SSL 明文流量与相关数据。
 
 1. 配置 Rust 环境与安装必要的库。
 
-注1：cargo 安装 bpf-linker 的前置库`build-essential`
+注1：cargo 安装 bpf-linker 的前置库`build-essential`。
 
-注2：cargo 安装 cargo-generate 的前置库`libssl-dev`
+注2：cargo 安装 cargo-generate 的前置库`libssl-dev`。
 
 ```shell
 sudo apt update 
@@ -139,6 +139,9 @@ cd ssl-observer
 ## 使用方法
 
 直接运行 or 编译。（需要 root 权限）
+
+注1：运行以及编译都需要一定额外的硬盘存储空间。
+注2：按下 `ctrl + c` 结束程序，可能需多按下。
 
 ```bash
 // 直接运行
