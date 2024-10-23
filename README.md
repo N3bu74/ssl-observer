@@ -100,10 +100,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # 刷新环境变量
 source $HOME/.cargo/env
 # 换源
-sudo gedit ~/.cargo/config.toml
-===============================
-[source.crates-io]
-replace-with = 'rsproxy-sparse'
+echo '[source.crates-io]
+replace-with = "rsproxy-sparse"
 [source.rsproxy]
 registry = "https://rsproxy.cn/crates.io-index"
 [source.rsproxy-sparse]
@@ -111,8 +109,7 @@ registry = "sparse+https://rsproxy.cn/index/"
 [registries.rsproxy]
 index = "https://rsproxy.cn/crates.io-index"
 [net]
-git-fetch-with-cli = true
-===============================
+git-fetch-with-cli = true' > ~/.cargo/config.toml
 
 # aya
 rustup install stable
