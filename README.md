@@ -88,11 +88,11 @@ mysql ：存储 SSL 明文流量与相关数据。
 
 注1：cargo 安装 bpf-linker 的前置库`build-essential`。
 
-注2：cargo 安装 cargo-generate 的前置库`libssl-dev`。
+注2：cargo 安装 cargo-generate 的前置库`libssl-dev、pkg-config`。
 
 ```shell
 sudo apt update 
-sudo apt install -y curl git build-essential libssl-dev
+sudo apt install -y curl git build-essential libssl-dev pkg-config
 
 export RUSTUP_DIST_SERVER="https://rsproxy.cn"
 export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
